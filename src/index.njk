@@ -58,18 +58,17 @@ hero: hero-redfish-mangroves.jpg
   <div class="wrap">
     <div class="center-head">
       <h2>Our Charters</h2>
-      <div class="accent-bar accent-bar--center" aria-hidden="true"></div>
     </div>
     <div class="trip-cards">
       {%- for t in trips %}
       <a class="trip-card" href="/charters/#{{ t.id }}">
         <div class="trip-card__media">
           <img src="/images/{{ t.img }}" alt="{{ t.alt }}" sizes="(max-width: 699px) 100vw, (max-width: 1080px) 50vw, 380px" style="object-position:{{ t.pos }}">
-          <span class="price-pill">{{ t.price }}</span>
         </div>
         <div class="trip-card__body">
-          <h3>{{ t.name }}</h3>
+          <div class="trip-card__top"><h3>{{ t.name }}</h3><span class="trip-card__price">{{ t.price }}</span></div>
           <p>{{ t.card }}</p>
+          <span class="trip-card__more">See trip details <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
         </div>
       </a>
       {%- endfor %}
@@ -93,7 +92,7 @@ hero: hero-redfish-mangroves.jpg
   </div>
 </section>
 
-<section class="section reviews-home" id="reviews">
+<section class="section" id="reviews">
   <div class="wrap">
     <div class="section-head">
       <h2>What Anglers Say</h2>
@@ -103,9 +102,9 @@ hero: hero-redfish-mangroves.jpg
   </div>
 </section>
 
-<section class="expect" id="what-to-expect">
-  <div class="wrap expect__grid">
-    <img class="expect__img" src="/images/boat-running-tampa-bay.jpg" alt="Center console fishing boat running across Tampa Bay" sizes="(max-width: 860px) 100vw, 520px" style="object-position:40% 50%">
+<section class="section expect" id="what-to-expect">
+  <div class="wrap split">
+    <img class="split__img" src="/images/three-anglers-grouper.jpg" alt="Three smiling anglers each holding a gag grouper" sizes="(max-width: 860px) 100vw, 560px" style="object-position:50% 30%">
     <div>
       <h2>What to Expect Fishing Tampa Bay</h2>
       <p class="expect__lead">Capt. Ashmore fishes all year. What you catch depends on the water you want to fish, and he'll point you to the right trip when you call.</p>
@@ -140,9 +139,9 @@ hero: hero-redfish-mangroves.jpg
   </div>
 </section>
 
-<section class="captain" id="captain">
-  <div class="wrap captain__grid">
-    <img src="/images/capt-ashmore-hogfish-cropped.jpg" alt="Capt. William Ashmore holding a hogfish offshore" sizes="(max-width: 760px) 100vw, 580px" style="object-position:50% 30%">
+<section class="section section--flush-top captain" id="captain">
+  <div class="wrap split">
+    <img class="split__img" src="/images/capt-ashmore-hogfish-cropped.jpg" alt="Capt. William Ashmore holding a hogfish offshore" sizes="(max-width: 860px) 100vw, 560px" style="object-position:50% 30%">
     <div>
       <h2>Meet Capt. William Ashmore</h2>
       <p>A Florida native, Capt. Ashmore has spent more than 40 years fishing Tampa Bay and Central Florida.</p>
@@ -159,10 +158,10 @@ hero: hero-redfish-mangroves.jpg
       <a class="text-link" href="/gallery/">See the full gallery</a>
     </div>
     <div class="boat-grid">
-      <a href="/gallery/"><img src="/images/redfish-angler-2-LOWRES.jpg" alt="Angler holding a redfish on the boat" sizes="(max-width: 699px) 100vw, 290px" style="object-position:50% 30%"></a>
-      <a href="/gallery/"><img src="/images/gallery/g01.jpg" alt="Angler standing on the boat holding a gag grouper" sizes="(max-width: 699px) 100vw, 290px" style="object-position:50% 30%"></a>
-      <a href="/gallery/"><img src="/images/gallery/g06.jpg" alt="Smiling angler on the bow holding a snook" sizes="(max-width: 699px) 100vw, 290px" style="object-position:50% 30%"></a>
-      <a href="/gallery/"><img src="/images/two-redfish-LOWRES.jpg" alt="Angler holding two redfish" sizes="(max-width: 699px) 100vw, 290px" style="object-position:50% 30%"></a>
+      <a href="/gallery/"><img src="/images/gallery/g01.jpg" alt="Angler standing on the boat holding a gag grouper" sizes="(max-width: 899px) 50vw, 290px" style="object-position:50% 30%"></a>
+      <a href="/gallery/"><img src="/images/cooler-of-snapper.jpg" alt="Cooler full of mangrove snapper on the dock" sizes="(max-width: 899px) 50vw, 290px"></a>
+      <a href="/gallery/"><img src="/images/boat-running-tampa-bay.jpg" alt="Center console fishing boat running across Tampa Bay" sizes="(max-width: 899px) 50vw, 290px" style="object-position:45% 50%"></a>
+      <a href="/gallery/"><img src="/images/gallery/g02.jpg" alt="Young angler in sunglasses holding a gag grouper" sizes="(max-width: 899px) 50vw, 290px" style="object-position:40% 50%"></a>
     </div>
   </div>
 </section>
