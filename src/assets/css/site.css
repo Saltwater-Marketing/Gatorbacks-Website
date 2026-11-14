@@ -272,3 +272,6 @@ h2 { color: var(--blue); font-size: clamp(2rem, 3.6vw, 2.8rem); line-height: 1.0
 .footer__base { border-top: 1px solid rgba(255,255,255,0.35); }
 .footer__base-inner { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.4rem 1.5rem; font-size: 1rem; padding-top: 1rem; padding-bottom: 1.4rem; }
 .footer__base-inner a { min-height: 24px; display: inline-flex; align-items: center; }
+
+/* Home: reviews sit under the charters */
+.reviews-home { padding-bottom: 0; }

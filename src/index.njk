@@ -72,19 +72,8 @@ hero: hero-redfish-mangroves.jpg
   </div>
 </section>
 
-{{ ui.wave("top") }}
-<section class="band" id="reviews">
-  <div class="wrap section--tight">
-    <div class="section-head">
-      <h2>What Anglers Say</h2>
-      <a class="text-link" href="/reviews/">Read all reviews</a>
-    </div>
-    {{ ui.reviewsWidget(site) }}
-  </div>
-</section>
-{{ ui.wave("bottom") }}
 
-<section class="section" id="charters">
+<section class="section section--flush-top" id="charters">
   <div class="wrap">
     <div class="section-head">
       <h2>Our Charters</h2>
@@ -120,6 +109,16 @@ hero: hero-redfish-mangroves.jpg
       <li>{{ ui.check() }}Fish cleaning</li>
     </ul>
     <p class="includes__note">Just bring drinks (no glass), snacks, sunglasses and sunscreen.</p>
+  </div>
+</section>
+
+<section class="section reviews-home" id="reviews">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>What Anglers Say</h2>
+      <a class="text-link" href="/reviews/">Read all reviews</a>
+    </div>
+    {{ ui.reviewsWidget(site) }}
   </div>
 </section>
 
