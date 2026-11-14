@@ -1,7 +1,12 @@
 [
-  { "name": "Tampa", "img": "", "alt": "", "placeholder": "Downtown and the bay" },
-  { "name": "St. Petersburg", "img": "", "alt": "", "placeholder": "The St. Pete waterfront" },
-  { "name": "Clearwater", "img": "", "alt": "", "placeholder": "Clearwater Beach and the Gulf" },
-  { "name": "Anna Maria", "img": "", "alt": "", "placeholder": "Anna Maria Island" },
-  { "name": "Kissimmee", "img": "", "alt": "", "placeholder": "Lake trips for crappie" }
+  { "name": "Tampa", "img": "town-tampa.jpg", "pos": "50% 60%", "alt": "Downtown Tampa skyline above the Hillsborough River", "placeholder": "Downtown and the bay",
+    "credit": { "author": "Sonny SideUp", "license": "CC BY 2.0", "licenseUrl": "https://creativecommons.org/licenses/by/2.0/", "source": "https://commons.wikimedia.org/wiki/File:Tampa_Skyline.jpg" } },
+  { "name": "St. Petersburg", "img": "town-st-petersburg.jpg", "pos": "50% 50%", "alt": "Boats in the marina below the downtown St. Petersburg skyline", "placeholder": "The St. Pete waterfront",
+    "credit": { "author": "John O'Neill", "license": "CC BY-SA 3.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/", "source": "https://commons.wikimedia.org/wiki/File:Downtown_St._Petersburg_Florida_from_Marina.png" } },
+  { "name": "Clearwater", "img": "town-clearwater.jpg", "pos": "35% 50%", "alt": "Pier 60 stretching out from the sand at Clearwater Beach", "placeholder": "Clearwater Beach and the Gulf",
+    "credit": { "author": "Michel Rathwell", "license": "CC BY 2.0", "licenseUrl": "https://creativecommons.org/licenses/by/2.0/", "source": "https://commons.wikimedia.org/wiki/File:Clearwater_Beach,_Florida_(35188097760).jpg" } },
+  { "name": "Anna Maria", "img": "town-anna-maria.jpg", "pos": "50% 50%", "alt": "Center console boat on clear green water off Anna Maria Island", "placeholder": "Anna Maria Island",
+    "credit": { "author": "Mikefairbanks", "license": "CC BY-SA 3.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/", "source": "https://commons.wikimedia.org/wiki/File:Anna_Maria_Island,_Florida.jpg" } },
+  { "name": "Kissimmee", "img": "town-kissimmee.jpg", "pos": "70% 50%", "alt": "Calm water and a wooden pier on Lake Tohopekaliga in Kissimmee", "placeholder": "Lake trips for crappie",
+    "credit": { "author": "Clément Bardot", "license": "CC BY-SA 4.0", "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/", "source": "https://commons.wikimedia.org/wiki/File:Lake_Tohopekaliga,_Florida.jpg" } }
 ]

@@ -86,6 +86,11 @@
       <span>&copy; 2026 {{ site.name }}</span>
       <a href="https://www.saltwatermarketing.net/" target="_blank" rel="noopener">Website by Saltwater Marketing</a>
     </div>
+    {%- if page.url == "/" %}
+    <p class="wrap footer__credits">Town photos from Wikimedia Commons:
+      {%- for t in towns %}{% if t.credit %} {{ t.name }} by <a href="{{ t.credit.source }}" target="_blank" rel="noopener">{{ t.credit.author }}</a> (<a href="{{ t.credit.licenseUrl }}" target="_blank" rel="noopener">{{ t.credit.license }}</a>){% if not loop.last %};{% else %}.{% endif %}{% endif %}{% endfor %}
+    </p>
+    {%- endif %}
   </div>
 </footer>
 {% block scripts %}{% endblock %}

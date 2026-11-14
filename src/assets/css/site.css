@@ -275,3 +275,4 @@ h2 { color: var(--blue); font-size: clamp(2rem, 3.6vw, 2.8rem); line-height: 1.0
 
 /* Home: reviews sit under the charters */
 .reviews-home { padding-bottom: 0; }
+.footer__credits { font-size: 0.95rem; padding-bottom: 1.4rem; margin: 0 auto; }

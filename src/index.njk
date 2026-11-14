@@ -131,7 +131,7 @@ hero: hero-redfish-mangroves.jpg
     <div class="towns">
       {%- for town in towns %}
       <figure class="town">
-        {% if town.img %}<img src="/images/{{ town.img }}" alt="{{ town.alt }}" sizes="(max-width: 699px) 100vw, 240px">{% else %}<div class="town__pending">Photo: [{{ town.placeholder }}]</div>{% endif %}
+        {% if town.img %}<img src="/images/{{ town.img }}" alt="{{ town.alt }}" sizes="(max-width: 699px) 100vw, 240px" style="object-position:{{ town.pos }}">{% else %}<div class="town__pending">Photo: [{{ town.placeholder }}]</div>{% endif %}
         <div class="town__shade" aria-hidden="true"></div>
         <figcaption>{{ town.name }}</figcaption>
       </figure>
