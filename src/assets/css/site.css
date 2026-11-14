@@ -315,3 +315,15 @@ h3 { font-size: 1.4rem; line-height: 1.15; }
 .footer__base-inner { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.4rem 1.5rem; font-size: var(--text-sm); padding-top: 1.1rem; padding-bottom: 1.1rem; }
 .footer__base-inner a { min-height: 24px; display: inline-flex; align-items: center; }
 .footer__credits { font-size: 0.875rem; line-height: 1.5; padding-bottom: 1.2rem; margin: 0 auto; }
+.trip-row__call { margin: 0; font-weight: 700; font-size: var(--text-lg); }
+.trip-row__call a { color: var(--blue); white-space: nowrap; }
+
+/* Google reviews link card (shown until the reviews widget embed is added) */
+.reviews-widget:has(.google-card) { border: 0; padding: 0; min-height: 0; background: transparent; }
+.google-card { display: flex; align-items: center; gap: 1.2rem 1.6rem; max-width: 760px; margin: 0 auto; padding: 1.6rem 1.8rem; background: #fff; border: 1px solid var(--line); border-radius: var(--radius); box-shadow: 0 1px 2px rgba(11,60,102,0.06); color: var(--ink); text-decoration: none; transition: box-shadow .2s, transform .2s; }
+.google-card:hover { box-shadow: 0 14px 30px rgba(11,60,102,0.14); transform: translateY(-2px); }
+.google-card__logo { flex: 0 0 auto; }
+.google-card__text { flex: 1 1 auto; display: flex; flex-direction: column; gap: 0.15rem; }
+.google-card__title { font-family: var(--head); font-weight: 700; font-size: 1.4rem; line-height: 1.15; }
+.google-card__link { flex: 0 0 auto; display: inline-flex; align-items: center; gap: 0.4rem; color: var(--blue); font-weight: 700; }
+@media (max-width: 699px) { .google-card { flex-direction: column; text-align: center; } }

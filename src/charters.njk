@@ -43,9 +43,13 @@ breadcrumb: Charters
         <div><dt>Targeting</dt><dd>{{ t.targeting }}</dd></div>
         <div><dt>Trip options</dt><dd>{{ t.options }}</dd></div>
         <div><dt>Guests</dt><dd>{{ t.guests }}</dd></div>
-        <div><dt>Included</dt><dd>Fishing license, rods, reels, bait and tackle, fish cleaning</dd></div>
+        <div><dt>Included</dt><dd>Fishing license, rods, reels, bait and tackle, a cooler with ice and water, fish cleaning</dd></div>
       </dl>
+      {% if t.bookByPhone %}
+      <p class="trip-row__call">Call or text <a href="{{ site.phoneHref }}">{{ site.phone }}</a> to book this trip.</p>
+      {% else %}
       <a class="btn btn--book" href="{{ site.bookUrl }}" target="_blank" rel="noopener">{{ site.bookLabel }}</a>
+      {% endif %}
     </div>
   </div>
 </section>

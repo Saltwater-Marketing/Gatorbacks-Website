@@ -25,7 +25,7 @@ breadcrumb: Contact
       <ul class="contact__list">
         <li><span class="contact__label">Call</span><a href="{{ site.phoneHref }}">{{ site.phone }}</a></li>
         <li><span class="contact__label">Text</span><a href="{{ site.smsHref }}">{{ site.phone }}</a></li>
-        <li><span class="contact__label">Email</span>{% if site.email | isPlaceholder %}<span>{{ site.email }}</span>{% else %}<a href="mailto:{{ site.email }}">{{ site.email }}</a>{% endif %}</li>
+        {% if site.email %}<li><span class="contact__label">Email</span><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>{% endif %}
       </ul>
       <a class="social social--blue" href="{{ site.facebook }}" target="_blank" rel="noopener" aria-label="{{ site.name }} on Facebook">
         <svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="#0070C0"><path d="M14 8h3V4h-3c-2.8 0-4.5 1.8-4.5 4.6V11H7v4h2.5v9h4v-9h3l.5-4h-3.5V9c0-.6.4-1 1-1z"/></svg>

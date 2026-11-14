@@ -9,8 +9,8 @@
     "card": "Redfish, snook and trout in the bay, with grouper and snapper in the mix.",
     "lead": "Fishing inside Tampa Bay for the fish it's known for, with grouper and snapper in the mix on the right day.",
     "targeting": "Redfish, snook, trout, plus grouper and snapper in the bay",
-    "options": "4 hours for a fast trip with lots of action, 6 hours for more time sight casting, or 8 hours, usually fishing two tides",
-    "guests": "1 to 6"
+    "options": "4 hours ($600), 6 hours ($750) or 8 hours ($950). 4-hour trips leave at 8 a.m. or 1 p.m.",
+    "guests": "1 to 6 (up to 4 at the base price, then $75 per extra guest)"
   },
   {
     "id": "redfish",
@@ -25,8 +25,8 @@
     "card": "Your first red, or the trophy you've been chasing.",
     "lead": "Catch your first redfish, or go after the trophy red you've always wanted.",
     "targeting": "Redfish",
-    "options": "[FROM VALLYPRO]",
-    "guests": "[FROM VALLYPRO]"
+    "options": "Booked as an Inshore trip: 4 hours ($600), 6 hours ($750) or 8 hours ($950)",
+    "guests": "1 to 6 (up to 4 at the base price, then $75 per extra guest)"
   },
   {
     "id": "snook",
@@ -38,8 +38,8 @@
     "card": "Snook of all sizes, right here in Tampa Bay.",
     "lead": "Tampa Bay has a strong snook fishery, with fish of all sizes.",
     "targeting": "Snook",
-    "options": "[FROM VALLYPRO]",
-    "guests": "[FROM VALLYPRO]"
+    "options": "Booked as an Inshore trip: 4 hours ($600), 6 hours ($750) or 8 hours ($950)",
+    "guests": "1 to 6 (up to 4 at the base price, then $75 per extra guest)"
   },
   {
     "id": "tarpon",
@@ -51,8 +51,8 @@
     "card": "Tampa Bay is one of the best places to hook a tarpon.",
     "lead": "Every summer, migrating tarpon pour into the area. We fish for them around the bridges and the passes, and sometimes along the beaches.",
     "targeting": "Tarpon",
-    "options": "[FROM VALLYPRO]. Season runs April 1 to August 31",
-    "guests": "1 to 4"
+    "options": "4 hours ($750), 6 hours ($900) or 8 hours ($1,150). Season runs April 1 to August 31",
+    "guests": "1 to 4, ages 10 and up (up to 2 at the base price, then $75 per extra guest)"
   },
   {
     "id": "shark",
@@ -64,8 +64,8 @@
     "card": "Go after some of the biggest predators in Tampa Bay.",
     "lead": "Take on some of the biggest predators in Tampa Bay.",
     "targeting": "Blacktip, bonnethead, bull, tiger, lemon and hammerhead sharks",
-    "options": "[FROM VALLYPRO]",
-    "guests": "1 to 6"
+    "options": "4 hours ($600), 6 hours ($800) or 8 hours ($1,000)",
+    "guests": "1 to 6 (up to 4 at the base price, then $75 per extra guest)"
   },
   {
     "id": "nearshore",
@@ -77,21 +77,22 @@
     "card": "Snapper, grouper, grunts, mackerel and sheepshead.",
     "lead": "From the mouth of Tampa Bay out to about nine miles. We bottom fish for grouper and snapper, and you can run into blackfin tuna, kingfish, cobia and the odd wahoo.",
     "targeting": "Grouper, snapper, grunts, mackerel and sheepshead, plus blackfin tuna, cobia and the occasional wahoo",
-    "options": "[FROM VALLYPRO]",
-    "guests": "1 to 6"
+    "options": "6 hours ($750) or 8 hours ($950)",
+    "guests": "1 to 6 (up to 4 at the base price, then $75 per extra guest)"
   },
   {
     "id": "grouper",
     "name": "Grouper",
-    "price": "From $[PRICE]",
+    "price": "From $550",
     "img": "gag-grouper-young-angler.jpg",
     "pos": "50% 45%",
     "alt": "Young angler holding a gag grouper on the boat",
     "card": "Strong fish that pull hard and eat well.",
     "lead": "Test yourself against grouper, strong fish that pull hard and taste great.",
     "targeting": "Grouper",
-    "options": "[FROM VALLYPRO]",
-    "guests": "[FROM VALLYPRO]"
+    "options": "4 hours ($550 afternoon, $650 morning), 6 hours ($750 afternoon, $800 morning) or 8 hours ($1,000)",
+    "guests": "1 to 6 (up to 4 at the base price, then $75 per extra guest)",
+    "bookByPhone": true
   },
   {
     "id": "offshore",
@@ -105,21 +106,22 @@
     "alt": "Young angler holding a grouper offshore",
     "card": "Past the beaches and into the Gulf for bigger fish.",
     "lead": "This trip starts where the nearshore trip ends, nine miles out and beyond, for bottom fish while we keep an eye out for pelagics.",
-    "targeting": "[SPECIES]",
-    "options": "[FROM VALLYPRO]",
+    "targeting": "Bottom fish, plus pelagics when they show up",
+    "options": "6 hours ($950) or 8 hours ($1,150)",
     "guests": "1 to 6"
   },
   {
     "id": "crappie",
     "name": "Crappie",
-    "price": "From $[PRICE]",
+    "price": "From $550",
     "img": "crappie-pile-SCREENSHOT.jpg",
     "pos": "50% 50%",
     "alt": "A pile of crappie from a lake trip near Kissimmee",
     "card": "Lake trips around Kissimmee for new and experienced anglers.",
     "lead": "Freshwater trips on the lakes around Kissimmee, good for new and experienced anglers.",
     "targeting": "Crappie, Kissimmee area lakes",
-    "options": "[FROM VALLYPRO]",
-    "guests": "[FROM VALLYPRO]"
+    "options": "4 hours ($550) or 6 hours ($650)",
+    "guests": "1 to 4",
+    "bookByPhone": true
   }
 ]
