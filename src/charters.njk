@@ -1,0 +1,61 @@
+---
+layout: base.njk
+permalink: /charters/
+title: "Fishing Charters in Tampa Bay, FL | Gatorbacks"
+description: "Charters with Capt. William Ashmore: inshore, redfish, snook, tarpon, shark, nearshore, grouper & offshore, plus Kissimmee crappie. Book online."
+hero: three-anglers-grouper.jpg
+breadcrumb: Charters
+---
+{% import "partials.njk" as ui %}
+<section class="hero hero--page">
+  {% heroImage hero, "Three smiling anglers each holding a gag grouper", "50% 10%" %}
+  <div class="hero__shade" aria-hidden="true"></div>
+  <div class="hero__content">
+    <div class="wrap hero__inner">
+      <h1>Fishing Charters in Tampa Bay</h1>
+      <a class="btn btn--light" href="#trips">See the Trips</a>
+    </div>
+  </div>
+</section>
+
+<section class="lead-line">
+  <div class="wrap wrap--narrow">
+    <p>Nine ways to fish with Capt. Ashmore, from Tampa Bay out to the Gulf, plus the lakes around Kissimmee.</p>
+    <div class="accent-bar accent-bar--center" aria-hidden="true"></div>
+  </div>
+</section>
+
+<nav class="trip-bar" id="trips" aria-label="Trips on this page">
+  <div class="wrap trip-bar__inner">
+    {%- for t in trips %}<a href="#{{ t.id }}">{{ t.name }}</a>{%- endfor %}
+  </div>
+</nav>
+
+{%- for t in trips %}
+<section class="trip-row{% if loop.index0 % 2 %} trip-row--alt{% endif %}" id="{{ t.id }}">
+  <div class="wrap trip-row__grid">
+    <img class="trip-row__img" src="/images/{{ t.rowImg or t.img }}" alt="{{ t.rowAlt or t.alt }}" sizes="(max-width: 860px) 100vw, 560px" style="object-position:{{ t.rowPos or t.pos }}">
+    <div class="trip-row__body">
+      <h2>{{ t.name }} Charter</h2>
+      <p class="trip-row__price">{{ t.price }}</p>
+      <p>{{ t.lead }}</p>
+      <dl class="trip-facts">
+        <div><dt>Targeting</dt><dd>{{ t.targeting }}</dd></div>
+        <div><dt>Trip options</dt><dd>{{ t.options }}</dd></div>
+        <div><dt>Guests</dt><dd>{{ t.guests }}</dd></div>
+        <div><dt>Included</dt><dd>Fishing license, rods, reels, bait and tackle, fish cleaning</dd></div>
+      </dl>
+      <a class="btn btn--book" href="{{ site.bookUrl }}" target="_blank" rel="noopener">{{ site.bookLabel }}</a>
+    </div>
+  </div>
+</section>
+{%- endfor %}
+
+<section class="section section--center">
+  <div class="wrap wrap--mid">
+    <h2>What to Bring</h2>
+    <p>Drinks (no glass), snacks, sunglasses, sunscreen and clothes for the weather. Your license, tackle and fish cleaning are covered.</p>
+  </div>
+</section>
+
+{{ ui.bookBand(site) }}

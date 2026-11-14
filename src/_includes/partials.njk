@@ -1,0 +1,62 @@
+{#- Shared building blocks. Import with: {% import "partials.njk" as ui %} -#}
+
+{% macro bookBand(site) %}
+<section class="book-band" id="book">
+  <img src="/images/group-dock-sunset-cooler.jpg" alt="" sizes="100vw" eleventy:widths="640,1024,1600" class="book-band__img">
+  <div class="book-band__shade" aria-hidden="true"></div>
+  <div class="book-band__body">
+    <h2>Book Your Trip</h2>
+    <p class="book-band__lead">Pick a date on our calendar and pay your deposit online.</p>
+    <a class="btn btn--book btn--lg" href="{{ site.bookUrl }}" target="_blank" rel="noopener">{{ site.bookLabel }}</a>
+    <p class="book-band__call">or call or text <a href="{{ site.phoneHref }}">{{ site.phone }}</a></p>
+  </div>
+</section>
+{% endmacro %}
+
+{% macro reviewsWidget(site) %}
+<div class="reviews-widget" data-embed="{{ site.reviewsEmbed | urlencode }}">
+  {% if not site.reviewsEmbed %}
+  <div class="reviews-widget__pending">
+    <p class="strong">[GOOGLE REVIEWS WIDGET]</p>
+    <p>The live Google reviews widget (Google logo, rotating reviews) goes here once Andre picks the provider and sends the embed code.</p>
+  </div>
+  {% endif %}
+</div>
+{% endmacro %}
+
+{% macro check() %}<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0070C0" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg>{% endmacro %}
+
+{% macro wave(position) %}
+{% if position == "top" %}
+<svg class="wave" aria-hidden="true" viewBox="0 0 1440 48" preserveAspectRatio="none"><path d="M0 30 C120 10 240 10 360 26 S600 44 720 26 S960 8 1080 24 S1320 42 1440 22 L1440 48 L0 48 Z" fill="#EAF3FB"/></svg>
+{% else %}
+<svg class="wave wave--bottom" aria-hidden="true" viewBox="0 0 1440 48" preserveAspectRatio="none"><path d="M0 18 C120 38 240 38 360 22 S600 4 720 22 S960 40 1080 24 S1320 6 1440 26 L1440 0 L0 0 Z" fill="#EAF3FB"/></svg>
+{% endif %}
+{% endmacro %}
+
+{#- Loads the reviews embed only when it scrolls near (keeps it off the first paint). -#}
+{% macro reviewsLoader() %}
+<script>
+(function () {
+  var boxes = document.querySelectorAll(".reviews-widget[data-embed]");
+  function load(el) {
+    var html = decodeURIComponent(el.getAttribute("data-embed") || "");
+    if (!html) return;
+    el.removeAttribute("data-embed");
+    var tpl = document.createElement("div"); tpl.innerHTML = html;
+    Array.prototype.forEach.call(tpl.childNodes, function (n) {
+      if (n.tagName === "SCRIPT") {
+        var s = document.createElement("script");
+        Array.prototype.forEach.call(n.attributes, function (a) { s.setAttribute(a.name, a.value); });
+        s.text = n.text; el.appendChild(s);
+      } else { el.appendChild(n.cloneNode(true)); }
+    });
+  }
+  if (!("IntersectionObserver" in window)) { boxes.forEach(load); return; }
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) { if (e.isIntersecting) { io.unobserve(e.target); load(e.target); } });
+  }, { rootMargin: "600px 0px" });
+  boxes.forEach(function (b) { io.observe(b); });
+})();
+</script>
+{% endmacro %}

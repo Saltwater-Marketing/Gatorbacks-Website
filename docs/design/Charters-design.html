@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Gatorbacks Charters page</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div style="font-family: 'Source Sans 3', Arial, sans-serif; color: #161616; background: #ffffff; font-size: 1.15rem; line-height: 1.6">
+
+<div style="background: {{blue}}; color: #ffffff; font-size: 1rem">
+<div style="max-width: 1200px; margin: 0 auto; padding: 0.5rem 1.25rem; display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: center; gap: 0.25rem 1.5rem">
+
+<a href="tel:8137145670" style="color: #ffffff; font-weight: 700; text-decoration: none; min-height: 32px; display: flex; align-items: center">Call or text 813-714-5670</a>
+</div>
+</div>
+
+<header style="background: #ffffff; border-bottom: 1px solid #DCE9F5">
+<div style="max-width: 1200px; margin: 0 auto; padding: 0.6rem 1.25rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem">
+<a href="Main.dc.html" aria-label="Gatorbacks Fishing Charters home" style="display: block; flex: 0 0 auto">
+<img src="../images/logo-full-color.png" alt="Gatorbacks Fishing Charters logo" style="height: 112px; width: auto; display: block">
+</a>
+<nav aria-label="Main" style="flex: 1 1 auto; display: flex; flex-wrap: wrap; justify-content: center; gap: 0.25rem 1.6rem; font-weight: 700; font-size: 1.05rem">
+<a href="Main.dc.html" style="color: #161616; text-decoration: none; padding: 0.6rem 0">Home</a>
+<a href="#trips" style="color: #161616; text-decoration: none; padding: 0.6rem 0; border-bottom: 3px solid {{book}}">Charters</a>
+<a href="#reviews" style="color: #161616; text-decoration: none; padding: 0.6rem 0">Reviews</a>
+<a href="#gallery" style="color: #161616; text-decoration: none; padding: 0.6rem 0">Gallery</a>
+<a href="#captain" style="color: #161616; text-decoration: none; padding: 0.6rem 0">About</a>
+<a href="#book" style="color: #161616; text-decoration: none; padding: 0.6rem 0">Contact</a>
+</nav>
+<a href="https://book.vallypro.com/p/gatorbacks-fishing-charters" target="_blank" rel="noopener" style="flex: 0 0 auto; background: {{book}}; color: #ffffff; font-weight: 700; text-decoration: none; padding: 0.8rem 1.3rem; border-radius: 10px; min-height: 44px; box-sizing: border-box; display: flex; align-items: center; font-size: 1.05rem">Book Now</a>
+</div>
+</header>
+
+<section style="position: relative; height: 34rem; overflow: hidden; background: #0B3C66">
+<img src="../images/three-anglers-grouper.jpg" alt="Three smiling anglers each holding a gag grouper" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 10%">
+<div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0) 50%, rgba(0,0,0,0.4) 100%)"></div>
+<div style="position: absolute; left: 0; right: 0; bottom: 0">
+<div style="max-width: 1200px; margin: 0 auto; padding: 0 1.25rem 2.8rem; display: flex; flex-direction: column; align-items: flex-start; gap: 1.2rem">
+<h1 style="margin: 0; font-family: 'Archivo', Arial, sans-serif; font-weight: 700; letter-spacing: -0.015em; color: #ffffff; font-size: clamp(2.4rem, 5vw, 4.2rem); line-height: 1.02; max-width: 16ch; text-shadow: 0 2px 14px rgba(0,0,0,0.45)">Fishing Charters in Tampa Bay</h1>
+<a href="#trips" style="background: #ffffff; color: {{blue}}; font-weight: 700; text-decoration: none; padding: 0.8rem 1.4rem; border-radius: 10px; min-height: 44px; box-sizing: border-box; display: flex; align-items: center">See the Trips</a>
+</div>
+</div>
+</section>
+<section style="background: #ffffff">
+<div style="max-width: 760px; margin: 0 auto; padding: 2.4rem 1.25rem 1.6rem; text-align: center">
+<p style="margin: 0; font-size: clamp(1.25rem, 2.2vw, 1.5rem); line-height: 1.45; font-weight: 600">Nine ways to fish with Capt. Ashmore, from Tampa Bay out to the Gulf, plus the lakes around Kissimmee.</p>
+<div aria-hidden="true" style="width: 40%; height: 5px; background: {{book}}; border-radius: 3px; margin: 1.6rem auto 0"></div>
+</div>
+</section>
+<nav id="trips" aria-label="Trips on this page" style="position: sticky; top: 0; z-index: 5; background: #ffffff; border-bottom: 1px solid #DCE9F5">
+<div style="max-width: 1200px; margin: 0 auto; padding: 0.7rem 1.25rem; display: flex; gap: 0.6rem; overflow-x: auto; flex-wrap: wrap">
+<a href="#inshore" style="flex: 0 0 auto; color: #161616; text-decoration: none; font-weight: 700; padding: 0.55rem 1rem; border: 2px solid #DCE9F5; border-radius: 999px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center; background: #ffffff">Inshore</a><a href="#redfish" style="flex: 0 0 auto; color: #161616; text-decoration: none; font-weight: 700; padding: 0.55rem 1rem; border: 2px solid #DCE9F5; border-radius: 999px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center; background: #ffffff">Redfish</a><a href="#snook" style="flex: 0 0 auto; color: #161616; text-decoration: none; font-weight: 700; padding: 0.55rem 1rem; border: 2px solid #DCE9F5; border-radius: 999px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center; background: #ffffff">Snook</a><a href="#tarpon" style="flex: 0 0 auto; color: #161616; text-decoration: none; font-weight: 700; padding: 0.55rem 1rem; border: 2px solid #DCE9F5; border-radius: 999px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center; background: #ffffff">Tarpon</a><a href="#shark" style="flex: 0 0 auto; color: #161616; text-decoration: none; font-weight: 700; padding: 0.55rem 1rem; border: 2px solid #DCE9F5; border-radius: 999px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center; background: #ffffff">Shark</a><a href="#nearshore" style="flex: 0 0 auto; color: #161616; text-decoration: none; font-weight: 700; padding: 0.55rem 1rem; border: 2px solid #DCE9F5; border-radius: 999px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center; background: #ffffff">Nearshore</a><a href="#grouper" style="flex: 0 0 auto; color: #161616; text-decoration: none; font-weight: 700; padding: 0.55rem 1rem; border: 2px solid #DCE9F5; border-radius: 999px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center; background: #ffffff">Grouper</a><a href="#offshore" style="flex: 0 0 auto; color: #161616; text-decoration: none; font-weight: 700; padding: 0.55rem 1rem; border: 2px solid #DCE9F5; border-radius: 999px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center; background: #ffffff">Offshore</a><a href="#crappie" style="flex: 0 0 auto; color: #161616; text-decoration: none; font-weight: 700; padding: 0.55rem 1rem; border: 2px solid #DCE9F5; border-radius: 999px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center; background: #ffffff">Crappie</a>
+</div>
+</nav>
+<section id="inshore" style="background: #ffffff; scroll-margin-top: 4rem">
+<div style="max-width: 1200px; margin: 0 auto; padding: 3.5rem 1.25rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: 2.5rem 3rem; align-items: center">
+<img src="../images/snook-smiling-angler.jpg" alt="Angler holding a snook on an inshore trip" style="width: 100%; height: 26rem; object-fit: cover; object-position: 50% 40%; border-radius: 18px; display: block">
+<div>
+<h2 style="margin: 0 0 0.3rem; font-family: 'Archivo', Arial, sans-serif; font-weight: 700; letter-spacing: -0.015em; color: #161616; font-size: clamp(1.8rem, 3vw, 2.4rem); line-height: 1.08">Inshore Charter</h2>
+<p style="margin: 0 0 1rem; font-weight: 700; color: {{book}}; font-size: 1.15rem">From $___</p>
+<p style="margin: 0 0 1.2rem">Fishing inside Tampa Bay for the fish it's known for, with grouper and snapper in the mix on the right day.</p>
+<ul style="margin: 0 0 1.5rem; padding: 0; list-style: none; font-size: 1.05rem">
+<li style="display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 0.8rem; padding: 0.65rem 0; border-top: 1px solid #DCE9F5"><span style="font-weight: 700; color: {{blue}}">Targeting</span><span>Redfish, snook, trout, plus grouper and snapper in the bay</span></li>
+<li style="display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 0.8rem; padding: 0.65rem 0; border-top: 1px solid #DCE9F5"><span style="font-weight: 700; color: {{blue}}">Trip options</span><span>[FROM VALLYPRO]</span></li>
+<li style="display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 0.8rem; padding: 0.65rem 0; border-top: 1px solid #DCE9F5"><span style="font-weight: 700; color: {{blue}}">Guests</span><span>[FROM VALLYPRO]</span></li>
+<li style="display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 0.8rem; padding: 0.65rem 0; border-top: 1px solid #DCE9F5"><span style="font-weight: 700; color: {{blue}}">Included</span><span>Fishing license, rods, reels and tackle, fish cleaning</span></li>
+</ul>
+<a href="https://book.vallypro.com/p/gatorbacks-fishing-charters" target="_blank" rel="noopener" style="background: {{book}}; color: #ffffff; font-weight: 700; text-decoration: none; padding: 0.85rem 1.5rem; border-radius: 10px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Book Now</a>
+</div>
+</div>
+</section><section id="redfish" style="background: #EAF3FB; scroll-margin-top: 4rem">
+<div style="max-width: 1200px; margin: 0 auto; padding: 3.5rem 1.25rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: 2.5rem 3rem; align-items: center">
+<div>
+<h2 style="margin: 0 0 0.3rem; font-family: 'Archivo', Arial, sans-serif; font-weight: 700; letter-spacing: -0.015em; color: #161616; font-size: clamp(1.8rem, 3vw, 2.4rem); line-height: 1.08">Redfish Charter</h2>
+<p style="margin: 0 0 1rem; font-weight: 700; color: {{book}}; font-size: 1.15rem">From $___</p>
+<p style="margin: 0 0 1.2rem">Catch your first redfish, or go after the trophy red you have always wanted.</p>
+<ul style="margin: 0 0 1.5rem; padding: 0; list-style: none; font-size: 1.05rem">
+<li style="display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 0.8rem; padding: 0.65rem 0; border-top: 1px solid #DCE9F5"><span style="font-weight: 700; color: {{blue}}">Targeting</span><span>Redfish</span></li>
+<li style="display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 0.8rem; padding: 0.65rem 0; border-top: 1px solid #DCE9F5"><span style="font-weight: 700; color: {{blue}}">Trip options</span><span>[FROM VALLYPRO]</span></li>
+<li style="display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 0.8rem; padding: 0.65rem 0; border-top: 1px solid #DCE9F5"><span style="font-weight: 700; color: {{blue}}">Guests</span><span>[FROM VALLYPRO]</span></li>
+<li style="display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 0.8rem; padding: 0.65rem 0; border-top: 1px solid #DCE9F5"><span style="font-weight: 700; color: {{blue}}">Included</span><span>Fishing license, rods, reels and tackle, fish cleaning</span></li>
+</ul>
+<a href="https://book.vallypro.com/p/gatorbacks-fishing-charters" target="_blank" rel="noopener" style="background: {{book}}; color: #ffffff; font-weight: 700; text-decoration: none; padding: 0.85rem 1.5rem; border-radius: 10px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Book Now</a>
+</div>
+<img src="../images/hero-redfish-mangroves.jpg" alt="Angler holding a redfish in front of the mangroves" style="width: 100%; height: 26rem; object-fit: cover; object-position: 70% 40%; border-radius: 18px; display: block">
+</div>
+</section><section id="snook" style="background: #ffffff; scroll-margin-top: 4rem">
+<div style="max-width: 1200px; margin: 0 auto; padding: 3.5rem 1.25rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: 2.5rem 3rem; align-items: center">
+<img src="../images/snook-angler-on-deck.jpg" alt="Angler kneeling on deck with a big snook" style="width: 100%; height: 26rem; object-fit: cover; object-position: 50% 45%; border-radius: 18px; display: block">
+<div>
+<h2 style="margin: 0 0 0.3rem; font-family: 'Archivo', Arial, sans-serif; font-weight: 700; letter-spacing: -0.015em; color: #161616; font-size: clamp(1.8rem, 3vw, 2.4rem); line-height: 1.08">Snook Charter</h2>
+<p style="margin: 0 0 1rem; font-weight: 700; color: {{book}}; font-size: 1.15rem">From $___</p>
+<p style="margin: 0 0 1.2rem">Tampa Bay has a strong snook fishery, with fish of all sizes.</p>
+<ul style="margin: 0 0 1.5rem; padding: 0; list-style: none; font-size: 1.05rem">
+<li style="display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 0.8rem; padding: 0.65rem 0; border-top: 1px solid #DCE9F5"><span style="font-weight: 700; color: {{blue}}">Targeting</span><span>Snook</span></li>
+<li style="display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 0.8rem; padding: 0.65rem 0; border-top: 1px solid #DCE9F5"><span style="font-weight: 700; color: {{blue}}">Trip options</span><span>[FROM VALLYPRO]</span></li>
+<li style="display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 0.8rem; padding: 0.65rem 0; border-top: 1px solid #DCE9F5"><span style="font-weight: 700; color: {{blue}}">Guests</span><span>[FROM VALLYPRO]</span></li>
+<li style="display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 0.8rem; padding: 0.65rem 0; border-top: 1px solid #DCE9F5"><span style="font-weight: 700; color: {{blue}}">Included</span><span>Fishing license, rods, reels and tackle, fish cleaning</span></li>
+</ul>
+<a href="https://book.vallypro.com/p/gatorbacks-fishing-charters" target="_blank" rel="noopener" style="background: {{book}}; color: #ffffff; font-weight: 700; text-decoration: none; padding: 0.85rem 1.5rem; border-radius: 10px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Book Now</a>
+</div>
+</div>
+</section><section id="tarpon" style="background: #EAF3FB; scroll-margin-top: 4rem">
+<div style="max-width: 1200px; margin: 0 auto; padding: 3.5rem 1.25rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: 2.5rem 3rem; align-items: center">
+<div>
+<h2 style="margin: 0 0 0.3rem; font-family: 'Archivo', Arial, sans-serif; font-weight: 700; letter-spacing: -0.015em; color: #161616; font-size: clamp(1.8rem, 3vw, 2.4rem); line-height: 1.08">Tarpon Charter</h2>
+<p style="margin: 0 0 1rem; font-weight: 700; color: {{book}}; font-size: 1.15rem">From $___</p>
+<p style="margin: 0 0 1.2rem">Tampa Bay is one of the best places to hook a tarpon, the fish so many anglers want to catch.</p>
+<ul style="margin: 0 0 1.5rem; padding: 0; list-style: none; font-size: 1.05rem">
+<li style="display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 0.8rem; padding: 0.65rem 0; border-top: 1px solid #DCE9F5"><span style="font-weight: 700; color: {{blue}}">Targeting</span><span>Tarpon</span></li>
+<li style="display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 0.8rem; padding: 0.65rem 0; border-top: 1px solid #DCE9F5"><span style="font-weight: 700; color: {{blue}}">Trip options</span><span>[FROM VALLYPRO]</span></li>
+<li style="display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 0.8rem; padding: 0.65rem 0; border-top: 1px solid #DCE9F5"><span style="font-weight: 700; color: {{blue}}">Guests</span><span>[FROM VALLYPRO]</span></li>
+<li style="display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 0.8rem; padding: 0.65rem 0; border-top: 1px solid #DCE9F5"><span style="font-weight: 700; color: {{blue}}">Included</span><span>Fishing license, rods, reels and tackle, fish cleaning</span></li>
+</ul>
+<a href="https://book.vallypro.com/p/gatorbacks-fishing-charters" target="_blank" rel="noopener" style="background: {{book}}; color: #ffffff; font-weight: 700; text-decoration: none; padding: 0.85rem 1.5rem; border-radius: 10px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Book Now</a>
+</div>
+<img src="../images/tarpon-boatside-LOWRES.jpg" alt="Angler bringing a tarpon boatside" style="width: 100%; height: 26rem; object-fit: cover; object-position: 50% 50%; border-radius: 18px; display: block">
+</div>
+</section><section id="shark" style="background: #ffffff; scroll-margin-top: 4rem">
+<div style="max-width: 1200px; margin: 0 auto; padding: 3.5rem 1.25rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: 2.5rem 3rem; align-items: center">
+<img src="../images/shark-two-anglers-LOWRES.jpg" alt="Two anglers holding a shark" style="width: 100%; height: 26rem; object-fit: cover; object-position: 50% 40%; border-radius: 18px; display: block">
+<div>
+<h2 style="margin: 0 0 0.3rem; font-family: 'Archivo', Arial, sans-serif; font-weight: 700; letter-spacing: -0.015em; color: #161616; font-size: clamp(1.8rem, 3vw, 2.4rem); line-height: 1.08">Shark Charter</h2>
+<p style="margin: 0 0 1rem; font-weight: 700; color: {{book}}; font-size: 1.15rem">From $___</p>
+<p style="margin: 0 0 1.2rem">Take on some of the biggest predators in Tampa Bay.</p>
+<ul style="margin: 0 0 1.5rem; padding: 0; list-style: none; font-size: 1.05rem">
+<li style="display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 0.8rem; padding: 0.65rem 0; border-top: 1px solid #DCE9F5"><span style="font-weight: 700; color: {{blue}}">Targeting</span><span>Sharks</span></li>
+<li style="display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 0.8rem; padding: 0.65rem 0; border-top: 1px solid #DCE9F5"><span style="font-weight: 700; color: {{blue}}">Trip options</span><span>[FROM VALLYPRO]</span></li>
+<li style="display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 0.8rem; padding: 0.65rem 0; border-top: 1px solid #DCE9F5"><span style="font-weight: 700; color: {{blue}}">Guests</span><span>[FROM VALLYPRO]</span></li>
+<li style="display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 0.8rem; padding: 0.65rem 0; border-top: 1px solid #DCE9F5"><span style="font-weight: 700; color: {{blue}}">Included</span><span>Fishing license, rods, reels and tackle, fish cleaning</span></li>
+</ul>
+<a href="https://book.vallypro.com/p/gatorbacks-fishing-charters" target="_blank" rel="noopener" style="background: {{book}}; color: #ffffff; font-weight: 700; text-decoration: none; padding: 0.85rem 1.5rem; border-radius: 10px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Book Now</a>
+</div>
+</div>
+</section><section id="nearshore" style="background: #EAF3FB; scroll-margin-top: 4rem">
+<div style="max-width: 1200px; margin: 0 auto; padding: 3.5rem 1.25rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: 2.5rem 3rem; align-items: center">
+<div>
+<h2 style="margin: 0 0 0.3rem; font-family: 'Archivo', Arial, sans-serif; font-weight: 700; letter-spacing: -0.015em; color: #161616; font-size: clamp(1.8rem, 3vw, 2.4rem); line-height: 1.08">Nearshore Charter</h2>
+<p style="margin: 0 0 1rem; font-weight: 700; color: {{book}}; font-size: 1.15rem">From $___</p>
+<p style="margin: 0 0 1.2rem">Just outside the bay for snapper, grouper and a mixed bag of good eating fish.</p>
+<ul style="margin: 0 0 1.5rem; padding: 0; list-style: none; font-size: 1.05rem">
+<li style="display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 0.8rem; padding: 0.65rem 0; border-top: 1px solid #DCE9F5"><span style="font-weight: 700; color: {{blue}}">Targeting</span><span>Snapper, grouper, grunts, mackerel and sheepshead</span></li>
+<li style="display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 0.8rem; padding: 0.65rem 0; border-top: 1px solid #DCE9F5"><span style="font-weight: 700; color: {{blue}}">Trip options</span><span>[FROM VALLYPRO]</span></li>
+<li style="display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 0.8rem; padding: 0.65rem 0; border-top: 1px solid #DCE9F5"><span style="font-weight: 700; color: {{blue}}">Guests</span><span>[FROM VALLYPRO]</span></li>
+<li style="display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 0.8rem; padding: 0.65rem 0; border-top: 1px solid #DCE9F5"><span style="font-weight: 700; color: {{blue}}">Included</span><span>Fishing license, rods, reels and tackle, fish cleaning</span></li>
+</ul>
+<a href="https://book.vallypro.com/p/gatorbacks-fishing-charters" target="_blank" rel="noopener" style="background: {{book}}; color: #ffffff; font-weight: 700; text-decoration: none; padding: 0.85rem 1.5rem; border-radius: 10px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Book Now</a>
+</div>
+<img src="../images/dock-sunset-grouper-hogfish.jpg" alt="Angler on the dock at sunset with a red grouper and a hogfish" style="width: 100%; height: 26rem; object-fit: cover; object-position: 50% 30%; border-radius: 18px; display: block">
+</div>
+</section><section id="grouper" style="background: #ffffff; scroll-margin-top: 4rem">
+<div style="max-width: 1200px; margin: 0 auto; padding: 3.5rem 1.25rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: 2.5rem 3rem; align-items: center">
+<img src="../images/gag-grouper-young-angler.jpg" alt="Young angler holding a gag grouper" style="width: 100%; height: 26rem; object-fit: cover; object-position: 50% 50%; border-radius: 18px; display: block">
+<div>
+<h2 style="margin: 0 0 0.3rem; font-family: 'Archivo', Arial, sans-serif; font-weight: 700; letter-spacing: -0.015em; color: #161616; font-size: clamp(1.8rem, 3vw, 2.4rem); line-height: 1.08">Grouper Charter</h2>
+<p style="margin: 0 0 1rem; font-weight: 700; color: {{book}}; font-size: 1.15rem">From $___</p>
+<p style="margin: 0 0 1.2rem">Test yourself against grouper, strong fish that pull hard and taste great.</p>
+<ul style="margin: 0 0 1.5rem; padding: 0; list-style: none; font-size: 1.05rem">
+<li style="display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 0.8rem; padding: 0.65rem 0; border-top: 1px solid #DCE9F5"><span style="font-weight: 700; color: {{blue}}">Targeting</span><span>Grouper</span></li>
+<li style="display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 0.8rem; padding: 0.65rem 0; border-top: 1px solid #DCE9F5"><span style="font-weight: 700; color: {{blue}}">Trip options</span><span>[FROM VALLYPRO]</span></li>
+<li style="display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 0.8rem; padding: 0.65rem 0; border-top: 1px solid #DCE9F5"><span style="font-weight: 700; color: {{blue}}">Guests</span><span>[FROM VALLYPRO]</span></li>
+<li style="display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 0.8rem; padding: 0.65rem 0; border-top: 1px solid #DCE9F5"><span style="font-weight: 700; color: {{blue}}">Included</span><span>Fishing license, rods, reels and tackle, fish cleaning</span></li>
+</ul>
+<a href="https://book.vallypro.com/p/gatorbacks-fishing-charters" target="_blank" rel="noopener" style="background: {{book}}; color: #ffffff; font-weight: 700; text-decoration: none; padding: 0.85rem 1.5rem; border-radius: 10px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Book Now</a>
+</div>
+</div>
+</section><section id="offshore" style="background: #EAF3FB; scroll-margin-top: 4rem">
+<div style="max-width: 1200px; margin: 0 auto; padding: 3.5rem 1.25rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: 2.5rem 3rem; align-items: center">
+<div>
+<h2 style="margin: 0 0 0.3rem; font-family: 'Archivo', Arial, sans-serif; font-weight: 700; letter-spacing: -0.015em; color: #161616; font-size: clamp(1.8rem, 3vw, 2.4rem); line-height: 1.08">Offshore Charter</h2>
+<p style="margin: 0 0 1rem; font-weight: 700; color: {{book}}; font-size: 1.15rem">From $___</p>
+<p style="margin: 0 0 1.2rem">Past the beaches and into true Gulf water, where the bigger fish live.</p>
+<ul style="margin: 0 0 1.5rem; padding: 0; list-style: none; font-size: 1.05rem">
+<li style="display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 0.8rem; padding: 0.65rem 0; border-top: 1px solid #DCE9F5"><span style="font-weight: 700; color: {{blue}}">Targeting</span><span>[SPECIES]</span></li>
+<li style="display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 0.8rem; padding: 0.65rem 0; border-top: 1px solid #DCE9F5"><span style="font-weight: 700; color: {{blue}}">Trip options</span><span>[FROM VALLYPRO]</span></li>
+<li style="display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 0.8rem; padding: 0.65rem 0; border-top: 1px solid #DCE9F5"><span style="font-weight: 700; color: {{blue}}">Guests</span><span>[FROM VALLYPRO]</span></li>
+<li style="display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 0.8rem; padding: 0.65rem 0; border-top: 1px solid #DCE9F5"><span style="font-weight: 700; color: {{blue}}">Included</span><span>Fishing license, rods, reels and tackle, fish cleaning</span></li>
+</ul>
+<a href="https://book.vallypro.com/p/gatorbacks-fishing-charters" target="_blank" rel="noopener" style="background: {{book}}; color: #ffffff; font-weight: 700; text-decoration: none; padding: 0.85rem 1.5rem; border-radius: 10px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Book Now</a>
+</div>
+<img src="../images/capt-ashmore-hogfish.jpg" alt="Angler holding a hogfish offshore" style="width: 100%; height: 26rem; object-fit: cover; object-position: 50% 35%; border-radius: 18px; display: block">
+</div>
+</section><section id="crappie" style="background: #ffffff; scroll-margin-top: 4rem">
+<div style="max-width: 1200px; margin: 0 auto; padding: 3.5rem 1.25rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); gap: 2.5rem 3rem; align-items: center">
+<img src="../images/crappie-pile-SCREENSHOT.jpg" alt="A pile of crappie from a Kissimmee lake trip" style="width: 100%; height: 26rem; object-fit: cover; object-position: 50% 50%; border-radius: 18px; display: block">
+<div>
+<h2 style="margin: 0 0 0.3rem; font-family: 'Archivo', Arial, sans-serif; font-weight: 700; letter-spacing: -0.015em; color: #161616; font-size: clamp(1.8rem, 3vw, 2.4rem); line-height: 1.08">Crappie Charter</h2>
+<p style="margin: 0 0 1rem; font-weight: 700; color: {{book}}; font-size: 1.15rem">From $___</p>
+<p style="margin: 0 0 1.2rem">Freshwater trips on the lakes around Kissimmee, good for new and experienced anglers.</p>
+<ul style="margin: 0 0 1.5rem; padding: 0; list-style: none; font-size: 1.05rem">
+<li style="display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 0.8rem; padding: 0.65rem 0; border-top: 1px solid #DCE9F5"><span style="font-weight: 700; color: {{blue}}">Targeting</span><span>Crappie, Kissimmee area lakes</span></li>
+<li style="display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 0.8rem; padding: 0.65rem 0; border-top: 1px solid #DCE9F5"><span style="font-weight: 700; color: {{blue}}">Trip options</span><span>[FROM VALLYPRO]</span></li>
+<li style="display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 0.8rem; padding: 0.65rem 0; border-top: 1px solid #DCE9F5"><span style="font-weight: 700; color: {{blue}}">Guests</span><span>[FROM VALLYPRO]</span></li>
+<li style="display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 0.8rem; padding: 0.65rem 0; border-top: 1px solid #DCE9F5"><span style="font-weight: 700; color: {{blue}}">Included</span><span>Fishing license, rods, reels and tackle, fish cleaning</span></li>
+</ul>
+<a href="https://book.vallypro.com/p/gatorbacks-fishing-charters" target="_blank" rel="noopener" style="background: {{book}}; color: #ffffff; font-weight: 700; text-decoration: none; padding: 0.85rem 1.5rem; border-radius: 10px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center">Book Now</a>
+</div>
+</div>
+</section>
+<section style="background: #ffffff">
+<div style="max-width: 900px; margin: 0 auto; padding: 3.5rem 1.25rem; text-align: center">
+<h2 style="margin: 0 0 0.8rem; font-family: 'Archivo', Arial, sans-serif; font-weight: 700; letter-spacing: -0.015em; color: {{blue}}; font-size: clamp(1.8rem, 3vw, 2.4rem); line-height: 1.08">What to Bring</h2>
+<p style="margin: 0">Drinks (no glass), snacks, sunglasses, sunscreen and clothes for the weather. Your license, tackle and fish cleaning are covered.</p>
+</div>
+</section>
+<section id="book" style="position: relative; overflow: hidden; background: #0B3C66; min-height: 30rem; display: flex; align-items: center">
+<img src="../images/group-dock-sunset-cooler.jpg" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 26%">
+<div aria-hidden="true" style="position: absolute; inset: 0; background: rgba(0,0,0,0.42)"></div>
+<div style="position: relative; max-width: 760px; margin: 0 auto; padding: 4.5rem 1.25rem; text-align: center; color: #ffffff">
+<h2 style="margin: 0 0 0.8rem; font-family: 'Archivo', Arial, sans-serif; font-weight: 700; letter-spacing: -0.015em; font-size: clamp(2.2rem, 4.4vw, 3.4rem); line-height: 1.02">Book Your Trip</h2>
+<p style="margin: 0 0 1.8rem; font-size: 1.25rem">Pick a date on our calendar and pay your deposit online.</p>
+<div style="display: flex; flex-direction: column; align-items: center; gap: 0.9rem">
+<a href="https://book.vallypro.com/p/gatorbacks-fishing-charters" target="_blank" rel="noopener" style="background: {{book}}; color: #ffffff; font-weight: 700; text-decoration: none; padding: 1rem 2.2rem; border-radius: 10px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center; font-size: 1.15rem">Book Now</a>
+<span>or call or text <a href="tel:8137145670" style="color: #ffffff; font-weight: 700">813-714-5670</a></span>
+</div>
+</div>
+</section>
+<footer style="background: {{blue}}; color: #ffffff">
+<div style="max-width: 1200px; margin: 0 auto; padding: 3rem 1.25rem 2rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: 2rem">
+<div>
+<img src="../images/logo-white-text.png" alt="Gatorbacks Fishing Charters logo" style="height: 120px; width: auto; display: block; margin-bottom: 1rem">
+<a href="https://www.facebook.com/gatorbacksbait" target="_blank" rel="noopener" aria-label="Gatorbacks on Facebook" style="display: inline-flex; width: 44px; height: 44px; align-items: center; justify-content: center; border-radius: 999px; border: 2px solid #ffffff">
+<svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="#ffffff"><path d="M14 8h3V4h-3c-2.8 0-4.5 1.8-4.5 4.6V11H7v4h2.5v9h4v-9h3l.5-4h-3.5V9c0-.6.4-1 1-1z"></path></svg>
+</a>
+</div>
+<div>
+<p style="margin: 0 0 0.7rem; font-weight: 700; font-size: 1.2rem">Pages</p>
+<div style="display: flex; flex-direction: column; gap: 0.2rem">
+<a href="#top" style="color: #ffffff; text-decoration: none; min-height: 36px; display: flex; align-items: center">Home</a>
+<a href="#charters" style="color: #ffffff; text-decoration: none; min-height: 36px; display: flex; align-items: center">Charters</a>
+<a href="#reviews" style="color: #ffffff; text-decoration: none; min-height: 36px; display: flex; align-items: center">Reviews</a>
+<a href="#gallery" style="color: #ffffff; text-decoration: none; min-height: 36px; display: flex; align-items: center">Gallery</a>
+<a href="#captain" style="color: #ffffff; text-decoration: none; min-height: 36px; display: flex; align-items: center">About</a>
+<a href="#book" style="color: #ffffff; text-decoration: none; min-height: 36px; display: flex; align-items: center">Contact</a>
+</div>
+</div>
+<div>
+<p style="margin: 0 0 0.7rem; font-weight: 700; font-size: 1.2rem">Get in Touch</p>
+<p style="margin: 0 0 0.4rem"><a href="tel:8137145670" style="color: #ffffff; font-weight: 700">Call or text 813-714-5670</a></p>
+<p style="margin: 0 0 0.4rem">Messages get answered once the captain is off the water.</p>
+<p style="margin: 0"><a href="https://book.vallypro.com/p/gatorbacks-fishing-charters/cart/gift-card" target="_blank" rel="noopener" style="color: #ffffff">Gift cards</a></p>
+</div>
+</div>
+<div style="border-top: 1px solid rgba(255,255,255,0.35)">
+<div style="max-width: 1200px; margin: 0 auto; padding: 1rem 1.25rem 1.4rem; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.4rem 1.5rem; font-size: 1rem">
+<span>© 2026 Gatorbacks Fishing Charters</span>
+<a href="https://www.saltwatermarketing.net/" target="_blank" rel="noopener" style="color: #ffffff">Website by Saltwater Marketing</a>
+</div>
+</div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"blue":{"editor":"color","default":"#0070C0","options":["#0070C0","#005A9C","#0B3C66"],"section":"Brand"},"book":{"editor":"color","default":"#C8460F","options":["#C8460F","#E0561B","#B83A0A"],"section":"Brand"},"$preview":{"width":1440,"height":8600}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      blue: this.props.blue ?? '#0070C0',
+      book: this.props.book ?? '#C8460F'
+
+    };
+  }
+}
+</script>
+</body>
+</html>

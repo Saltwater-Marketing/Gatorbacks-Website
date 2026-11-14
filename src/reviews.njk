@@ -1,0 +1,35 @@
+---
+layout: base.njk
+permalink: /reviews/
+title: "Reviews | Gatorbacks Fishing Charters"
+description: "Read Google reviews from anglers who fished Tampa Bay with Capt. William Ashmore of Gatorbacks Fishing Charters. See what to expect & book your trip."
+hero: snook-smiling-angler.jpg
+breadcrumb: Reviews
+---
+{% import "partials.njk" as ui %}
+<section class="hero hero--short">
+  {% heroImage hero, "Smiling angler holding a snook on the boat", "50% 22%" %}
+  <div class="hero__shade" aria-hidden="true"></div>
+  <div class="hero__content">
+    <div class="wrap hero__inner">
+      <h1>Gatorbacks Fishing Charters Reviews</h1>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="split-head">
+      <h2>What Anglers Say</h2>
+      <p>Here's what people say after a day on the water with Capt. Ashmore, straight from his Google profile.</p>
+    </div>
+    {{ ui.reviewsWidget(site) }}
+    <div class="cta-row cta-row--links">
+      <a class="text-link" href="{{ site.googleReviewsUrl }}" target="_blank" rel="noopener">Read all reviews on Google</a>
+      <a class="text-link" href="{{ site.googleLeaveReviewUrl }}" target="_blank" rel="noopener">Leave a review</a>
+    </div>
+  </div>
+</section>
+
+{{ ui.bookBand(site) }}
+{{ ui.reviewsLoader() }}

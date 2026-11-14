@@ -1,0 +1,15 @@
+{
+  "name": "gatorbacks-website",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Gatorbacks Fishing Charters website (Eleventy, hosted on Netlify)",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve"
+  },
+  "engines": { "node": ">=20" },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "@11ty/eleventy-img": "^6.0.4"
+  }
+}

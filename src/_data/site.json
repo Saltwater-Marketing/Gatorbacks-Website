@@ -1,0 +1,26 @@
+{
+  "name": "Gatorbacks Fishing Charters",
+  "url": "https://www.gatorbacksfishingcharters.com",
+  "captain": "Capt. William Ashmore",
+  "phone": "813-714-5670",
+  "phoneHref": "tel:+18137145670",
+  "smsHref": "sms:+18137145670",
+  "email": "[EMAIL]",
+  "bookUrl": "https://book.vallypro.com/p/gatorbacks-fishing-charters",
+  "bookLabel": "Book Now",
+  "giftCardUrl": "https://book.vallypro.com/p/gatorbacks-fishing-charters/cart/gift-card",
+  "facebook": "https://www.facebook.com/gatorbacksbait",
+  "googleReviewsUrl": "[GOOGLE REVIEWS URL]",
+  "googleLeaveReviewUrl": "[GOOGLE LEAVE A REVIEW URL]",
+  "reviewsEmbed": "",
+  "gtmId": "GTM-M8RRK59Q",
+  "areas": ["Tampa", "St. Petersburg", "Clearwater", "Anna Maria", "Kissimmee"],
+  "nav": [
+    { "label": "Home", "url": "/" },
+    { "label": "Charters", "url": "/charters/" },
+    { "label": "Reviews", "url": "/reviews/" },
+    { "label": "Gallery", "url": "/gallery/" },
+    { "label": "About", "url": "/about/" },
+    { "label": "Contact", "url": "/contact/" }
+  ]
+}
