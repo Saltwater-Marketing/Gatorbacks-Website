@@ -274,7 +274,7 @@ h2 { color: var(--blue); font-size: clamp(2rem, 3.6vw, 2.8rem); line-height: 1.0
 .footer__base-inner a { min-height: 24px; display: inline-flex; align-items: center; }
 
 /* Home: reviews sit under the charters */
-.reviews-home { padding-bottom: 0; }
+.reviews-home { padding-bottom: 4.5rem; }
 .footer__credits { font-size: 0.95rem; padding-bottom: 1.4rem; margin: 0 auto; }
 
 /* Centered section heading with the orange bar under it */
@@ -290,3 +290,21 @@ h2 { color: var(--blue); font-size: clamp(2rem, 3.6vw, 2.8rem); line-height: 1.0
 .scene__title { font-family: var(--head); font-weight: 700; letter-spacing: -0.015em; font-size: 1.8rem; line-height: 1.1; }
 .scene__text { font-size: 1.08rem; line-height: 1.45; }
 @media (max-width: 699px) { .scene { height: 26rem; } }
+
+/* Home: What to Expect Fishing Tampa Bay (copy-led, one photo, no cards) */
+.expect { background: var(--tint); }
+.expect__grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 2.5rem 4rem; align-items: center; padding-top: 4.5rem; padding-bottom: 4.5rem; }
+.expect__img { width: 100%; height: 100%; min-height: 34rem; object-fit: cover; border-radius: var(--radius); display: block; }
+.expect h2 { margin-bottom: 1rem; }
+.expect__lead { font-size: 1.2rem; }
+.expect__list { margin: 1.4rem 0 1.2rem; }
+.expect__list div { display: grid; grid-template-columns: 9.5rem minmax(0, 1fr); gap: 1rem; padding: 0.8rem 0; border-top: 1px solid #C9DCEE; }
+.expect__list div:last-child { border-bottom: 1px solid #C9DCEE; }
+.expect__list dt { font-family: var(--head); font-weight: 700; color: var(--blue); font-size: 1.12rem; line-height: 1.35; }
+.expect__list dd { margin: 0; }
+.expect__close { font-weight: 600; margin: 0; }
+@media (max-width: 860px) {
+  .expect__grid { grid-template-columns: 1fr; padding-top: 3rem; padding-bottom: 3.5rem; }
+  .expect__img { min-height: 0; height: 18rem; }
+  .expect__list div { grid-template-columns: 1fr; gap: 0.15rem; }
+}
